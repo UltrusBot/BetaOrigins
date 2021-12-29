@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "origins",
+  "version": "${version}",
+
+  "name": "UltrusBot",
+  "description": "This is a cursed port of Origins to b1.7.3!",
+  "authors": [
+    "UltrusBot"
+  ],
+  "contact": {
+    "issues": "https://github.com/UltrusBot/BetaOrigins/issues",
+    "sources": "https://github.com/UltrusBot/BetaOrigins"
+  },
+
+  "license": "MIT",
+  "icon": "assets/origins/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "io.github.ultrusbot.origins.OriginsMod"
+    ]
+  },
+  "mixins": [
+    "origins.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "api": "*"
+  }
+}

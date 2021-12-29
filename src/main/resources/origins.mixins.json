@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "io.github.ultrusbot.origins.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "LivingEntityMixin",
+    "PlayerEntityMixin",
+    "PlayerInventoryMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
