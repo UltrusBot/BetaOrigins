@@ -3,7 +3,9 @@
   "package": "io.github.ultrusbot.origins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "GameOptionsMixin",
     "LivingEntityMixin",
+    "MinecraftMixin",
     "PlayerEntityMixin",
     "PlayerInventoryMixin"
   ],

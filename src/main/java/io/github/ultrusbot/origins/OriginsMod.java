@@ -16,7 +16,7 @@ import tk.valoeghese.zoesteriaconfig.api.container.WritableConfig;
 import tk.valoeghese.zoesteriaconfig.api.template.ConfigTemplate;
 
 public class OriginsMod implements ModInitializer {
-	public static ItemType ORB_OF_ORIGIN = Registries.ITEM_TYPE.register(new Id("origins:orb_of_origin"), id -> new OrbOfOriginItemType(id).setName("orbofOrigins"));;
+	public static ItemType ORB_OF_ORIGIN = Registries.ITEM_TYPE.register(new Id("origins:orb_of_origin"), id -> new OrbOfOriginItemType(id).setName("orbofOrigins"));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -25,6 +25,9 @@ public class OriginsMod implements ModInitializer {
 
 		System.out.println("Origins is loading!");
 		Translations.addItemTranslation(ORB_OF_ORIGIN, "Orb of Origin");
+		Translations.addTranslation("key.primary", "Primary");
+		Translations.addTranslation("key.secondary", "Secondary");
+
 		Recipes.addShapelessRecipe(new ItemInstance(ORB_OF_ORIGIN), Tile.DIRT);
 		Recipes.addShapelessRecipe(new ItemInstance(ItemType.chestplateDiamond), Tile.SAND);
 
