@@ -9,7 +9,8 @@ public enum Origin {
     SHULK(5, "Shulk"),
     FELINE(6, "Feline"),
     BLAZEBORN(7, "Blazeborn"),
-    ELYTRIAN(8, "Elytrian");
+    ELYTRIAN(8, "Elytrian"),
+    ARACHNID(9, "Arachnid");
 
     public final int id;
     public final String name;
